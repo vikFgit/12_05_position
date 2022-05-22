@@ -2,5 +2,30 @@
   --main-color: teal;
   --hover-color: rgb(0, 41, 41);
   --text-color: white;
+
+}
+.nav-list{
+  font-size: 0;
+  /* text-align: center; */
+  padding-left: 20px;
+}
+.nav-list-item{
+  display: inline-block;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: initial;
+}
+.nav-list-item:hover{
+  background-color: var(--hover-color);
+}
+.nav-list-link{
+  display: inline-block;
+  padding: 1em;
 }
 
+
+
+
+section{
+  margin-top: 20px;
+}
