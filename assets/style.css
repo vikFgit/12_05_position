@@ -1,11 +1,12 @@
 :root{
-  --main-color: teal;
-  --hover-color: rgb(0, 41, 41);
+  --main-color: rgb(54, 177, 156);
+  --hover-color: rgb(5, 36, 56);
   --text-color: white;
 }
 .nav-list{
   font-size: 0;
   /* text-align: center; */
+  /* размещение меню */
   padding-left: 20px;
 }
 .nav-list-item{
@@ -27,17 +28,29 @@
 }
 .sub-nav-list{
   display: none;
+  width: 100%;
   position: absolute;
   right: 0;
   left: 0;
 }
-.nav-list-item:hover .sub-nav-list{
+.nav-list-item:hover>.sub-nav-list{ 
   display: block;
   }
 /* when we hover nav-list-item, in sub-nav-list do display block */
 .sub-nav-list-item{
   display: block;
 }
+.sub-nav-list .sub-nav-list{
+  display: none; 
+  width: 100%;
+  left: 100%;
+  /* left:-100% вместо right: 100% для отображения в другую сторону */
+  top:0; 
+}
+
+
+
+
 
 
 
